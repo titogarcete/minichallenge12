@@ -1,0 +1,16 @@
+class Figura:
+    def imprimir(self):
+        print("Esto es una figura.")
+
+class Circulo(Figura):
+    def __init__(self, radio):
+        self.radio = radio
+
+    def imprimir(self):
+        print(f"Es círculo con radio {self.radio}.")
+
+figura = Figura()
+figura.imprimir()
+
+circulo = Circulo(5)
+circulo.imprimir()
